@@ -10,7 +10,13 @@ class Array
     elsif (queen_y_position === input_y_position)
       return true
     else
-      return false
+      x_coordinates = queen_x_position.-(input_x_position)
+      y_coordinates = queen_y_position.-(input_y_position)
+      if (x_coordinates === y_coordinates)
+        return true
+      else
+        return false
+      end
     end
   end
 end
